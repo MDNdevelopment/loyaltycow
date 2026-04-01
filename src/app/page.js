@@ -2,6 +2,7 @@
 import CustomForm from "@/components/CustomForm";
 import Navbar from "@/components/Navbar";
 import PhoneInput from "@/components/PhoneInput";
+import AndroidWalletGuide from "@/components/AndroidWalletGuide";
 import { useGetCardData } from "@/hooks/useGetCardData";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
         {cardData.description}
       </h2>
 
+      <AndroidWalletGuide />
       <CustomForm />
       <h2 className="text-[1.5em] lg:mt-0 mt-10 lg:text-[2em] lg:w-full w-4/5 mx-auto font-bold text-gray-800 text-center">
         Términos y condiciones
